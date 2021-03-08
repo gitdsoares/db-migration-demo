@@ -4,7 +4,7 @@
     "host": "localhost",
     "port": "3306",
     "user": "root",
-    "password": "Mackenzie",
-    "database": "db-migration-demo"
+    "password": ${{ secrets.MYSQL_USERNAME }},
+    "database": ${{ secrets.MYSQL_PASSWORD }}
   }
 }
